@@ -1,0 +1,62 @@
+.headerColor{
+  background-color: var(--first);
+}
+
+.navBarTop{
+  height: 60px;
+}
+
+.nameLogo{
+  color: var(--white);
+}
+
+.shoppingCartIcon{
+  color: var(--white);
+}
+
+.nameLogoContainer{
+  font-family: 'Kalam', cursive;
+  width: 10rem;
+}
+
+.navBarBottom{
+  height: 2rem;
+  font-size: 2.5rem;
+}
+
+
+.menuContainer{
+  background-color: var(--second);
+  color: var(--black);
+}
+
+.menuContainer>li:hover{
+  background-color: var(--third);
+}
+
+.menuContainer>li>a{
+  text-decoration: none;
+  color: var(--black);
+}
+.menuContainer>li>a:hover{
+  color: var(--white);
+}
+
+.badgeNumber {
+  background-color: var(--fifth);
+}
+
+.categoriesButton {
+  background-color: var(--second);
+  color: var(--white);
+}
+
+.categoriesButton:hover {
+  opacity: 0.6;
+}
+
+.shoppingCartContainer{
+  background-color: var(--first);
+  border: 0;
+}
+

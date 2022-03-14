@@ -1,0 +1,49 @@
+
+.cardContainer{
+  border: 1px solid var(--third);
+}
+
+.rateCard{
+  width: 5rem;
+  height: auto;
+}
+.cards{
+  width: 14rem;
+  height: 26rem;
+}
+
+.cardTitle{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 190px;
+  height: 72px;
+}
+
+.categoryCard{
+  color: var(--darkGray);
+}
+
+.priceCard{
+  width: 6rem;
+  height: auto;
+  display: inline-block;
+}
+
+.buttonCardContainer{
+  width: 9.8rem;
+}
+
+
+.addButtonCard{
+  background-color: var(--third);
+  border: 1px solid var(--first);
+  color: var(--black);
+}
+
+.addButtonCard:hover{
+  opacity: 0.8;
+}
+
+.cartIcon{
+  color: var(--fourth);
+}

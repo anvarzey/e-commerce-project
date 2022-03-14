@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Overlock:wght@400;700&display=swap');
+/* ----- VARIABLES ----- */
+:root{
+    --first: #0E614C;
+    --second: #18AD88;
+    --third: #1FE0B0;
+    --fourth: #947707;
+    --fifth: #E0BE38;
+    --sixth: #11c701;
+    --black: #101010;
+    --darkGray: #656565;
+    --lightGray: #e9e9e9;
+    --white: #FEFEFE;
+}
+
+html{
+    box-sizing: border-box;
+    background-color: var(--lightGray);
+
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+.body{
+    background-color: var(--lightGray);
+
+    font-family: 'Overlock', cursive;
+}
+
+.star {
+  color: var(--fifth);
+}
+
+.cardImage{
+    height: 11rem;
+    width: 11rem;
+  }
+

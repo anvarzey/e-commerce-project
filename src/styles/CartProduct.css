@@ -1,0 +1,51 @@
+.itemLastContainer {
+  height: 9.6rem;
+}
+
+.itemTitle{
+  height: 2.2rem;
+  width: auto;
+}
+
+.inStock {
+  color: var(--sixth);
+}
+
+.itemLabel{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.category{
+  color: var(--darkGray);
+
+}
+
+.minusAndPlusButton{
+  width: 2.2rem;
+}
+
+.deleteButton{
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 0;
+  background-color: var(--white);
+}
+
+.imageProductCart{
+  width: 11rem;
+  height: 11rem;
+}
+
+@media (max-width: 768px) {
+  .imageProductCart{
+    width: 11rem;
+    height: 8rem;
+    margin-top: 2rem;
+  }
+
+  .votesCounter{
+    display: block;
+  }
+}
+

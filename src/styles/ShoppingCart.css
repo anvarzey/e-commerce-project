@@ -1,0 +1,62 @@
+
+.itemImg{
+  height: 6rem;
+  width: auto;
+}
+
+.badgeSize {
+  width: 25px;
+  height: 25px;
+}
+
+.checkOutContainer {
+  width: 15.5rem;
+  height: 11rem;
+  background-color: var(--second);
+  border: 1px solid var(--fifth);
+  color: var(--white);
+}
+
+.checkOutButton{
+  background-color: var(--fifth);
+  border: 2px solid var(--fourth);
+  color: var(--black);
+}
+
+.boxy{
+  color: var(--second)
+}
+
+.cartEmpty{
+  width: auto;
+
+}
+
+.cartEmpty2{
+  width: 31rem;
+  margin-left: 21.5rem;
+  margin-right: auto;
+}
+
+.inStock {
+  color: var(--sixth);
+}
+
+.sadIcon{
+  color: var(--fourth);
+}
+
+.itemLabel{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.deleteButton{
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+.itemCont {
+  height: 1rem;
+  width: 1.5rem;
+}
