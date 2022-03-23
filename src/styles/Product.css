@@ -1,6 +1,12 @@
 
 .cardContainer{
   border: 1px solid var(--third);
+  cursor: pointer;
+}
+
+.cardContainer:hover{
+  transform: scale(1.05);
+  transition-duration: 500ms;
 }
 
 .rateCard{
@@ -41,7 +47,12 @@
 }
 
 .addButtonCard:hover{
-  opacity: 0.8;
+  opacity: 0.7;
+}
+
+.addButtonCard:active{
+  transform: scale(0.9);
+  transition-duration: 800ms;
 }
 
 .cartIcon{

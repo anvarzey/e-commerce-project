@@ -48,10 +48,9 @@ export default function Products({ keyword }) {
           );
         }
 
-
         return (
           <div className="justify-content-center flex-wrap  d-flex mx-auto newFont">
-      <h1 className="mt-5 text-capitalize pageTitle text-center">{keyword !== favourites ? keyword : "Our most popular products"}</h1>
+      <h1 className="mt-5 text-capitalize fw-bold pageTitle text-center">{keyword !== favourites ? keyword : "Our most popular products"}</h1>
       <div className="d-flex flex-wrap container justify-content-around mt-4">
         {actual.map((single) => (
               <Product

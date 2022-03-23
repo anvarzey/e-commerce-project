@@ -8,9 +8,13 @@ import CurrencyFormat from 'react-currency-format';
 export default function ShoppingCart() {
   const [{basket}, dispatch] = useStateValue();
 
+  function checkOutFunction() {
+    alert("Sorry! This page is under construction.");
+  }
+
   return (
     <>
-      <h1 className="text-center mx-auto mt-4 mb-5">Shopping Cart</h1>
+      <h1 className="text-center mx-auto text-capitalize fw-bold mt-4 mb-5">Shopping Cart</h1>
       <div className="container-fluid">
         <div className="row">
           <div className="col-12 col-md-7 col-lg-9 ms-lg-2 mx-0 px-md-0 container">
@@ -34,7 +38,7 @@ export default function ShoppingCart() {
 
               }
               </ol>
-              : <div className='d-flex flex-column align-items-center'><h1 className='d-inline-block'> Ohh! Your cart is empty <i className="bi bi-emoji-frown fs-3 sadIcon"></i> </h1>
+              : <div className='d-flex flex-column align-items-center'><h1 className='d-inline-block'> Oh! Your cart is empty <i className="bi bi-emoji-frown fs-3 sadIcon"></i> </h1>
                 <h3 className='d-inline-block px-5 text-center'>Let's fill it with some lovely products <i className="bi boxy bi-box2-heart"></i> </h3></div>
             }
           </div>
@@ -45,7 +49,7 @@ export default function ShoppingCart() {
              <div className="fs-4 align-self-start">{value}</div>
              <small className="align-self-start">+ Taxes included</small>
              <small className="align-self-start">+ Free shipping</small>
-             <button className="align-self-center checkOutButton mt-3">Proceed to checkout</button>
+             <button onClick={checkOutFunction} className="align-self-center checkOutButton mt-3">Proceed to checkout</button>
              <div className="col-md-1"></div>
              </>
              )}

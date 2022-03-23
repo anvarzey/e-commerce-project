@@ -43,7 +43,7 @@ export default function Product( {id, title, category, image, rating, price} ) {
 
   return (
 
-      <div className="col-12 col-md-4 cardContainer card cards mt-3 d-flex justify-items-center align-items-center" >
+      <div className="col-12 col-md-4 cardContainer card cards mt-3 d-flex justify-items-center align-items-center shadow-sm" >
         <img src={image} className="card-img-top cardImage mt-2" alt="..." />
         <div className="card-body">
           <h5 className="card-title cardTitle fs-5">{title}</h5>

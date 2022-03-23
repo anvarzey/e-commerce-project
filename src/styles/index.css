@@ -3,19 +3,18 @@
 :root{
     --first: #0E614C;
     --second: #18AD88;
-    --third: #1FE0B0;
+    --third: #6dd6bc;
     --fourth: #947707;
     --fifth: #E0BE38;
     --sixth: #11c701;
     --black: #101010;
     --darkGray: #656565;
-    --lightGray: #e9e9e9;
+    --lightGray: #e7e7e7;
     --white: #FEFEFE;
 }
 
 html{
     box-sizing: border-box;
-    background-color: var(--lightGray);
 
 }
 
@@ -26,8 +25,11 @@ html{
 }
 
 .body{
-    background-color: var(--lightGray);
-
+    background: linear-gradient(to bottom, #F2CC85, #ceac71);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
     font-family: 'Overlock', cursive;
 }
 

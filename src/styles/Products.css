@@ -8,5 +8,5 @@
 
 .pageTitle{
   width: 27.5rem;
-  font-weight: bold;
+  color: var(--black);
 }

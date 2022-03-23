@@ -1,5 +1,6 @@
 .headerColor{
   background-color: var(--first);
+  box-shadow: 3px 0 4px 4px #383838;
 }
 
 .navBarTop{
@@ -24,7 +25,6 @@
   font-size: 2.5rem;
 }
 
-
 .menuContainer{
   background-color: var(--second);
   color: var(--black);
@@ -36,10 +36,10 @@
 
 .menuContainer>li>a{
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
 }
 .menuContainer>li>a:hover{
-  color: var(--white);
+  color: var(--black);
 }
 
 .badgeNumber {
