@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom"
 import "../styles/Product.css"
-import { useStateValue } from "../services/StateProvider";
+import useDispatch from '../hooks/useDispatch';
 
 export default function Product( {id, title, category, image, rating, price} ) {
+  const { addToBasket } = useDispatch({ id, title, category, image, rating, price })
 
-  const [ state, dispatch ] = useStateValue()
    let cat = ""
    switch (category) {
      case "women's clothing":
@@ -23,28 +23,11 @@ export default function Product( {id, title, category, image, rating, price} ) {
      default: cat= "/";
        break;
    }
-    const addToBasket = () => {
-     // Dispatch the data into the data layer
-     dispatch({
-       type: "ADD_TO_BASKET",
-       item: {
-         id: id,
-         title: title,
-         image: image,
-         price: price,
-         category: category,
-         rate: rating.rate,
-         count: rating.count,
-         quant: 1
-       }
-     })
-   }
-
 
   return (
 
       <div className="col-12 col-md-4 cardContainer card cards mt-3 d-flex justify-items-center align-items-center shadow-sm" >
-        <img src={image} className="card-img-top cardImage mt-2" alt="..." />
+          <img src={image} className="cardImage mx-auto mt-2" alt="..." />
         <div className="card-body">
           <h5 className="card-title cardTitle fs-5">{title}</h5>
           <Link to={cat} className="text-decoration-none">

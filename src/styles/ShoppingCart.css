@@ -13,7 +13,6 @@
   width: 15.5rem;
   height: 11rem;
   background-color: var(--second);
-  border: 1px solid var(--fifth);
   color: var(--white);
 }
 
@@ -21,6 +20,10 @@
   background-color: var(--fifth);
   border: 2px solid var(--fourth);
   color: var(--black);
+}
+
+.checkOutButton:hover{
+  opacity: 0.9;
 }
 
 .boxy{

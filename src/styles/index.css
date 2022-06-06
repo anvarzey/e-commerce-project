@@ -26,11 +26,13 @@ html{
 
 .body{
     background: linear-gradient(to bottom, #F2CC85, #ceac71);
+    background: #e4e2d9;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 100vh;
     font-family: 'Overlock', cursive;
+    padding-bottom: 4rem;
 }
 
 .star {
@@ -39,6 +41,11 @@ html{
 
 .cardImage{
     height: 11rem;
-    width: 11rem;
+    max-width: 90%;
+    object-fit: contain;
   }
 
+  .max-w-1{
+      width: min(95%, 1200px);
+
+  }

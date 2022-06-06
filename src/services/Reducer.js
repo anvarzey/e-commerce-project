@@ -2,12 +2,10 @@ export let initialState = {
   basket: [],
 }
 
-// GET THE TOTAL PRICE
+// Get the total price
 
 export const GetBasketTotal = (basket) =>
  basket?.reduce((amount, item) => (item.price * item.quant) + amount, 0)
-
-
 
 const reducer = ( state, action ) => {
   switch(action.type){
