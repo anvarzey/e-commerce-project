@@ -48,7 +48,7 @@ export default function CartProduct({ id, image, title, price, quant, category, 
                 <i className="bi bi-x-circle text-danger"></i>
               </button>
               <div className="max-w-90 text-end">{quant} X </div>
-              <div className="fs-custom fw-bold max-w-90 text-end">{value}</div>
+              <div className="fs-custom fw-bold max-w-90 d-flex justify-content-end">{value}</div>
             </div>
           </>
         )}

@@ -5,7 +5,6 @@ export default function useProducts({keyword}) {
   const [items, setItems] = useState([]);
   const [actual, setActual] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [errorM, setErrorM] = useState("");
   const favourites = "favourites";
 
   useEffect(() => {
@@ -18,7 +17,7 @@ export default function useProducts({keyword}) {
         }
       })
       .catch((err) => {
-        setErrorM(err)
+        setActual(err)
       })
       .finally(() => {
         setLoading(false);
@@ -46,5 +45,5 @@ export default function useProducts({keyword}) {
     }
   }, [keyword, items]);
 
-  return {actual, loading, errorM}
+  return {actual, loading}
 }

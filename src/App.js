@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavBar from "./components/NavBar";
+import Header from "./components/Header";
 import Products from "./pages/Products";
 import ShoppingCart from "./pages/ShoppingCart";
 import { StateProvider } from "./services/StateProvider";
@@ -11,7 +11,7 @@ function App() {
     <div className="body">
       <StateProvider initialState={initialState} reducer={reducer}>
         <BrowserRouter>
-          <NavBar />
+          <Header />
           <Routes>
             <Route
               path="/"

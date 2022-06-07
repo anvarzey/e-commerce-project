@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Overlock:wght@400;700&display=swap');
+
 /* ----- VARIABLES ----- */
 :root{
     --first: #0E614C;
@@ -13,14 +13,13 @@
     --white: #FEFEFE;
 }
 
-html{
-    box-sizing: border-box;
-
-}
-
 *,
 *::before,
 *::after{
+    box-sizing: border-box;
+}
+
+html{
     box-sizing: inherit;
 }
 
@@ -33,6 +32,7 @@ html{
     min-height: 100vh;
     font-family: 'Overlock', cursive;
     padding-bottom: 4rem;
+    font-display: swap;
 }
 
 .star {

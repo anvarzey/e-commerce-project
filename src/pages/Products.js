@@ -6,7 +6,7 @@ import useProducts from '../hooks/useProducts';
 
 export default function Products({ keyword }) {
   const favourites = "favourites";
-  const { actual, loading, errorM } = useProducts({keyword})
+  const { actual, loading } = useProducts({keyword})
 
   const parse = (amount) => {
     let newAmount = parseFloat(amount.toFixed(2));
@@ -24,7 +24,9 @@ export default function Products({ keyword }) {
     );
   }
 
-  if (errorM !== "") return <ErrorMessage err={errorM} />;
+  const regex = /error/i;
+
+  if (regex.test(actual)) return <ErrorMessage err={actual} />;
 
   return (
     <div className="justify-content-center flex-wrap  d-flex mx-auto newFont">

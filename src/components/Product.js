@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import "../styles/Product.css"
 import useDispatch from '../hooks/useDispatch';
 
-export default function Product( {id, title, category, image, rating, price} ) {
+function Product( {id, title, category, image, rating, price} ) {
   const { addToBasket } = useDispatch({ id, title, category, image, rating, price })
 
    let cat = ""
@@ -27,7 +27,7 @@ export default function Product( {id, title, category, image, rating, price} ) {
   return (
 
       <div className="col-12 col-md-4 cardContainer card cards mt-3 d-flex justify-items-center align-items-center shadow-sm" >
-          <img src={image} className="cardImage mx-auto mt-2" alt="..." />
+          <img src={image} className="cardImage mx-auto mt-2" alt={title} loading="lazy" />
         <div className="card-body">
           <h5 className="card-title cardTitle fs-5">{title}</h5>
           <Link to={cat} className="text-decoration-none">
@@ -52,3 +52,6 @@ export default function Product( {id, title, category, image, rating, price} ) {
   );
 }
 
+ export default React.memo(Product, (prevProps, nextProps) => {
+   return prevProps.id === nextProps.id
+ })

@@ -44,13 +44,7 @@
 }
 
 .fs-custom{
-  font-size: 1.2rem;
-}
-
-@media screen and (min-width: 720px){
-.fs-custom{
-  font-size: 1.65rem;
-}
+  font-size: clamp(1em, 4vw, 1.65em);
 }
 
 @media (max-width: 768px) {
